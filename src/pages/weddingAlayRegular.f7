@@ -38,7 +38,7 @@
       >
 
      <div class="card demo-card-header-pic">
-          <div style="background-image:url(static/wedding.JPG)"
+          <div style="background-image:url(static/wedding.jpg)"
             class="card-header align-items-flex-end">Wedding</div>
           <div class="card-content card-content-padding">
             <p class="date">January 17, 2023</p>
