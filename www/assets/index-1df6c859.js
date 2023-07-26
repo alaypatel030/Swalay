@@ -253,7 +253,7 @@ ${o.toString()}`)}return n&&(typeof n=="string"?l+=`?${n}`:Object.keys(n).length
 
     </div>
   </div>
-`}}Qs.id="af2265e0bd";Qs.style=`
+`}}Qs.id="b88d1f8ac4";Qs.style=`
   .demo-card-header-pic .card-header {
     height: 40vw;
     background-size: cover;
@@ -441,7 +441,7 @@ ${o.toString()}`)}return n&&(typeof n=="string"?l+=`?${n}`:Object.keys(n).length
       </div>
     </div>
   </div>
-`}}Zs.id="bf9f603183";Zs.style=`
+`}}Zs.id="dcde8c2e05";Zs.style=`
   img.demo-lazy {
     width: 100%;
     height: auto;
@@ -645,7 +645,7 @@ ${o.toString()}`)}return n&&(typeof n=="string"?l+=`?${n}`:Object.keys(n).length
       </div>
     </div>
   </div>
-`}}en.id="72479cc2bc";en.style=`
+`}}en.id="fc89e8dbf9";en.style=`
   img.demo-lazy {
     width: 100%;
     height: auto;
@@ -851,7 +851,7 @@ ${o.toString()}`)}return n&&(typeof n=="string"?l+=`?${n}`:Object.keys(n).length
       </div>
     </div>
   </div>
-`}}tn.id="8eba26b6c2";tn.style=`
+`}}tn.id="8f42a7f5fc";tn.style=`
   img.demo-lazy {
     width: 100%;
     height: auto;
@@ -1056,7 +1056,7 @@ ${o.toString()}`)}return n&&(typeof n=="string"?l+=`?${n}`:Object.keys(n).length
       </div>
     </div>
   </div>
-`}}an.id="b40662f166";an.style=`
+`}}an.id="137a2d1ffb";an.style=`
   img.demo-lazy {
     width: 100%;
     height: auto;
@@ -1261,7 +1261,7 @@ ${o.toString()}`)}return n&&(typeof n=="string"?l+=`?${n}`:Object.keys(n).length
       </div>
     </div>
   </div>
-`}}sn.id="115b77c88b";sn.style=`
+`}}sn.id="1d889c747d";sn.style=`
   img.demo-lazy {
     width: 100%;
     height: auto;
@@ -1465,7 +1465,7 @@ ${o.toString()}`)}return n&&(typeof n=="string"?l+=`?${n}`:Object.keys(n).length
       </div>
     </div>
   </div>
-`}}nn.id="05d6e3f90c";nn.style=`
+`}}nn.id="095ff124a2";nn.style=`
   img.demo-lazy {
     width: 100%;
     height: auto;
@@ -1669,7 +1669,7 @@ ${o.toString()}`)}return n&&(typeof n=="string"?l+=`?${n}`:Object.keys(n).length
       </div>
     </div>
   </div>
-`}}rn.id="4e136b2a98";rn.style=`
+`}}rn.id="34e77d0fe6";rn.style=`
   img.demo-lazy {
     width: 100%;
     height: auto;
@@ -1872,7 +1872,7 @@ ${o.toString()}`)}return n&&(typeof n=="string"?l+=`?${n}`:Object.keys(n).length
       </div>
     </div>
   </div>
-`}}on.id="ac2e3ebc92";on.style=`
+`}}on.id="701e03edcb";on.style=`
   img.demo-lazy {
     width: 100%;
     height: auto;
@@ -2076,7 +2076,7 @@ ${o.toString()}`)}return n&&(typeof n=="string"?l+=`?${n}`:Object.keys(n).length
       </div>
     </div>
   </div>
-`}}ln.id="905f604639";ln.style=`
+`}}ln.id="6ff2edd3ac";ln.style=`
   img.demo-lazy {
     width: 100%;
     height: auto;
@@ -2280,7 +2280,7 @@ ${o.toString()}`)}return n&&(typeof n=="string"?l+=`?${n}`:Object.keys(n).length
       </div>
     </div>
   </div>
-`}}cn.id="a7e66c5215";cn.style=`
+`}}cn.id="e93af95fa4";cn.style=`
   img.demo-lazy {
     width: 100%;
     height: auto;
@@ -2484,7 +2484,7 @@ ${o.toString()}`)}return n&&(typeof n=="string"?l+=`?${n}`:Object.keys(n).length
       </div>
     </div>
   </div>
-`}}dn.id="eca2ed29d6";dn.style=`
+`}}dn.id="9b4449cc76";dn.style=`
   img.demo-lazy {
     width: 100%;
     height: auto;
@@ -2688,7 +2688,7 @@ ${o.toString()}`)}return n&&(typeof n=="string"?l+=`?${n}`:Object.keys(n).length
       </div>
     </div>
   </div>
-`}}un.id="50951db552";un.style=`
+`}}un.id="64c8ba60e2";un.style=`
   img.demo-lazy {
     width: 100%;
     height: auto;
@@ -2892,7 +2892,7 @@ ${o.toString()}`)}return n&&(typeof n=="string"?l+=`?${n}`:Object.keys(n).length
       </div>
     </div>
   </div>
-`}}fn.id="a83bdf143a";fn.style=`
+`}}fn.id="b4594dff69";fn.style=`
   img.demo-lazy {
     width: 100%;
     height: auto;
@@ -3045,7 +3045,7 @@ ${o.toString()}`)}return n&&(typeof n=="string"?l+=`?${n}`:Object.keys(n).length
     </div>
 
     </div>
-`}}_i.id="3e626d6029";function Gi(){return function(a){var e=a.$,t=a.$h,s=a.$root,n=a.$f7,r=a.$f7route,i=a.$f7router,l=a.$theme,o=a.$update,c=a.$store;return t`
+`}}_i.id="68bfd4ce8a";function Gi(){return function(a){var e=a.$,t=a.$h,s=a.$root,n=a.$f7,r=a.$f7route,i=a.$f7router,l=a.$theme,o=a.$update,c=a.$store;return t`
   <div class="page dark color-theme-orange" data-name="home">
     <!-- Top Navbar -->
     <div class="navbar navbar-large">
@@ -3078,7 +3078,7 @@ ${o.toString()}`)}return n&&(typeof n=="string"?l+=`?${n}`:Object.keys(n).length
 
     </div>
     </div>
-`}}Gi.id="6c04142425";function pn(a,{$f7route:e,$f7:t,$on:s,$onBeforeMount:n,$onMounted:r,$onBeforeUnmount:i,$onUnmounted:l}){function o(){return JSON.stringify(e.params.imgName).slice(1,-1)}function c(){return JSON.stringify(e.params.img).slice(1,-1)}return function(d){var u=d.$,p=d.$h,g=d.$root,f=d.$f7,h=d.$f7route,m=d.$f7router,v=d.$theme,b=d.$update,$=d.$store;return p`
+`}}Gi.id="cb482aa757";function pn(a,{$f7route:e,$f7:t,$on:s,$onBeforeMount:n,$onMounted:r,$onBeforeUnmount:i,$onUnmounted:l}){function o(){return JSON.stringify(e.params.imgName).slice(1,-1)}function c(){return JSON.stringify(e.params.img).slice(1,-1)}return function(d){var u=d.$,p=d.$h,g=d.$root,f=d.$f7,h=d.$f7route,m=d.$f7router,v=d.$theme,b=d.$update,$=d.$store;return p`
   <div class="page dark">
     <div class="navbar">
       <div class="navbar-bg"></div>
@@ -3114,7 +3114,7 @@ ${o.toString()}`)}return n&&(typeof n=="string"?l+=`?${n}`:Object.keys(n).length
       </div>
     </div>
   </div>
-`}}pn.id="4d0aaf400c";pn.style=`
+`}}pn.id="5c6cb30587";pn.style=`
   p {
     margin: 10px 0;
   }
@@ -3145,7 +3145,7 @@ ${o.toString()}`)}return n&&(typeof n=="string"?l+=`?${n}`:Object.keys(n).length
       </div>
     </div>
   </div>
-`}}qi.id="534681a7fb";function hn(){return function(a){var e=a.$,t=a.$h,s=a.$root,n=a.$f7,r=a.$f7route,i=a.$f7router,l=a.$theme,o=a.$update,c=a.$store;return t`
+`}}qi.id="f9294e4ced";function hn(){return function(a){var e=a.$,t=a.$h,s=a.$root,n=a.$f7,r=a.$f7route,i=a.$f7router,l=a.$theme,o=a.$update,c=a.$store;return t`
   <div class="page dark" data-name="home">
     <!-- Top Navbar -->
     <div class="navbar">
@@ -3262,7 +3262,7 @@ ${o.toString()}`)}return n&&(typeof n=="string"?l+=`?${n}`:Object.keys(n).length
 
     </div>
   </div>
-`}}hn.id="6023ba5a1c";hn.style=`
+`}}hn.id="5af0c8ac6a";hn.style=`
   .demo-card-header-pic .card-header {
     height: 40vw;
     background-size: cover;
@@ -3436,4 +3436,4 @@ ${o.toString()}`)}return n&&(typeof n=="string"?l+=`?${n}`:Object.keys(n).length
 
   
   </div>
-`}}Wi.id="5bc0119978";var th=new ze({name:"Swalay",theme:"auto",el:"#app",component:Wi,store:Ep,routes:yp});
+`}}Wi.id="edd2549013";var th=new ze({name:"Swalay",theme:"auto",el:"#app",component:Wi,store:Ep,routes:yp});
