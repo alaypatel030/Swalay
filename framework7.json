@@ -1,0 +1,19 @@
+{
+  "cwd": "/Users/alaypatel/Documents/Swalay",
+  "type": [
+    "web"
+  ],
+  "name": "Swalay",
+  "framework": "core",
+  "template": "single-view",
+  "bundler": "vite",
+  "cssPreProcessor": false,
+  "theming": {
+    "customColor": false,
+    "color": "#007aff",
+    "darkTheme": true,
+    "iconFonts": true,
+    "fillBars": false
+  },
+  "customBuild": false
+}
