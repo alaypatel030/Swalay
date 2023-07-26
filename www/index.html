@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <!--
+  Customize this policy to fit your own app's needs. For more guidance, please refer to the docs:
+      https://cordova.apache.org/docs/en/latest/
+  Some notes:
+    * https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
+    * Disables use of inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
+      * Enable inline JS: add 'unsafe-inline' to default-src
+  -->
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src * 'self' 'unsafe-inline' 'unsafe-eval' data: content:"
+    />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, viewport-fit=cover"
+    />
+
+    <meta name="theme-color" content="#212121" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <title>Swalay</title>
+    <meta property="og:site_name" content="Site" />
+    <meta property="og:title" content="Swalay" />
+    <meta property="og:description" content="Alay & Sweta Photo/Video Album of Engagement and Wedding" />
+    <meta property="og:image" itemprop="image" content="static/128x128.png" />
+    <meta property="og:type" content="website" />
+
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta
+      name="apple-mobile-web-app-status-bar-style"
+      content="black-translucent"
+    />
+    <link rel="apple-touch-icon" href="icons/apple-touch-icon.png" />
+    <link rel="icon" href="icons/favicon.png" />
+
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-QD4HCQ8J5E"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-QD4HCQ8J5E");
+    </script>
+
+    <!-- built styles file will be auto injected -->
+    <script type="module" crossorigin src="./assets/index-76a47d6a.js"></script>
+    <link rel="stylesheet" href="./assets/index-d9373210.css">
+  </head>
+  <body>
+    <div id="app" class="dark"></div>
+
+    <script src="https://apps.elfsight.com/p/platform.js"></script>
+    
+  </body>
+</html>

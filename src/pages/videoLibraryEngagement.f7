@@ -1,0 +1,81 @@
+<template>
+  <div class="page dark color-theme-orange" data-name="home">
+    <!-- Top Navbar -->
+    <div class="navbar navbar-large">
+      <div class="navbar-bg"></div>
+      <div class="navbar-inner">
+        <div class="left">
+          <a href="#" class="link icon-only panel-open" data-panel="left">
+            <i class="icon f7-icons if-not-md">menu</i>
+            <i class="icon material-icons if-md">menu</i>
+          </a>
+        </div>
+        <div class="title sliding">Engagement Video</div>
+        <div class="title-large">
+          <div class="title-large-text">Engagement Video</div>
+        </div>
+      </div>
+    </div>
+
+
+ <div class="page-content">
+
+  <div class="block-title">Engagement Video</div>
+      <div class="card">
+        <div style="height:500px">
+          <iframe  width="100%" class="elevation-demo elevation-24" src="https://www.youtube.com/embed/LqfbAo-hJU0" title="YouTube video player"
+                                        frameborder="0"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" style="overflow:hidden;height:100%;width:100%"
+                                        allowfullscreen></iframe>
+                                        </div> 
+      </div>
+
+
+       <div class="block-title">Good Times V1</div>
+       <div class="card" style="max-height:500px">
+
+            <div class="ratio ratio-16x9" style="max-height:500px">
+                                        <video controls width="100%" height="100%" poster="static/clips/V1GoodTimes_1.0.jpg" style="max-height:500px">
+                                            <source src="static/clips/V1_Celebration.MP4" controls loop type="video/mp4" />
+                                        </video>
+                                    </div>
+             </div> 
+
+
+    <div class="block-title">Good Times V2</div>
+       <div class="card" style="max-height:500px">
+
+            <div class="ratio ratio-16x9" style="max-height:500px">
+                                        <video controls width="100%" style="max-height:500px" height="100%" poster="static/clips/V2GoodTimes_1.0.jpg">
+                                            <source src="static/clips/V2_Celebration.MP4" controls loop type="video/mp4" />
+                                        </video>
+                                    </div>
+             </div> 
+
+
+
+
+       <div class="block-title">By Alay</div>
+       <div class="card" style="max-height:500px">
+            <div class="ratio ratio-16x9" style="max-height:500px">
+                                        <video controls width="100%" style="max-height:500px" height="100%" poster="static/clips/ByMe_1.0.jpg">
+                                            <source src="static/clips/ItsMe.MP4" controls loop type="video/mp4" />
+                                        </video>
+                                    </div>
+             </div> 
+
+ 
+     <div class="block-title">By Sweta</div>
+       <div class="card" style="max-height:500px">
+
+            <div class="ratio ratio-16x9" style="max-height:500px">
+                                        <video controls width="100%" height="100%" style="max-height:500px" poster="static/clips/BySweta_1.0.jpg">
+                                            <source src="static/clips/ItsHer.MP4" controls loop type="video/mp4" />
+                                        </video>
+                                    </div>
+             </div> 
+  
+    </div>
+
+    </div>
+</template>

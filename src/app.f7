@@ -1,0 +1,119 @@
+
+<template>
+  <div id="app">
+
+    <!-- Left panel with cover effect-->
+    <div class="panel panel-left panel-cover dark panel-init">
+          <div class="view">
+            <div class="page">
+              <div class="navbar">
+                <div class="navbar-bg"></div>
+                <div class="navbar-inner">
+                  <div class="title">Menu</div>
+                </div>
+              </div>
+            <div class="page-content">
+
+
+            <div class="list links-list">
+              <ul>
+                <li>
+                  <a href="/">Home</a>
+                </li>
+              </ul>
+          </div>   
+
+            <div class="block block-strong">Engagement Gallery
+             <div class="list links-list">
+            <ul>
+              <li>
+                <a href="/engagement/">Swalay | Pictures</a>
+              </li>
+            </ul>
+          </div>
+          </div>
+
+
+ <div class="block block-strong">Haldi Gallery
+             <div class="list links-list">
+            <ul>
+              <li>
+                <a href="/haldiAlayRegular/">Alay | Haldi Regular</a>
+              </li>
+              <li>
+                <a href="/haldiAlayCandid/">Alay | Haldi Candid</a>
+              </li>
+              <li><a href="/haldiSweta/">Sweta | Haldi</a></li>
+            </ul>
+          </div>
+          </div>
+
+ <div class="block block-strong">Santak Gallery
+             <div class="list links-list">
+             <ul>
+              <li>
+                <a href="/santakAlayRegular/">Alay | Santak Regular</a>
+              </li>
+              <li>
+                <a href="/santakAlayCandid/">Alay | Santak Candid</a>
+              </li>
+              <li><a href="/santakSweta/">Sweta | Santak</a></li>
+            </ul>
+          </div>
+          </div>
+
+ <div class="block block-strong">Sangeet Gallery
+             <div class="list links-list">
+             <ul>
+              <li>
+                <a href="/sangeetAlayRegular/">Alay | Sangeet Regular</a>
+              </li>
+              <li>
+                <a href="/sangeetAlayCandid/">Alay | Sangeet Candid</a>
+              </li>
+              <li><a href="/sangeetSweta/">Sweta | Sangeet</a></li>
+            </ul>
+          </div>
+          </div>
+
+
+           <div class="block block-strong">Wedding Gallery
+             <div class="list links-list">
+             <ul>
+              <li>
+                <a href="/weddingAlayRegular/">Alay | Wedding Regular</a>
+              </li>
+              <li>
+                <a href="/weddingAlayCandid/">Alay | Wedding Candid</a>
+              </li>
+              <li><a href="/weddingSweta/">Sweta | Wedding</a></li>
+            </ul>
+          </div>
+          </div>
+
+      <div class="block block-strong">Video Gallery
+             <div class="list links-list">
+              <ul>
+              <li>
+                <a href="/videoLibraryEngagement/">Engagement</a>
+              </li>
+              <li>
+                <a href="/videoLibraryWedding/">Wedding</a>
+              </li>
+            </ul>
+          </div>
+          </div>
+
+ 
+           </div>
+        </div>
+      </div>     
+    </div>     
+
+    <!-- Your main view, should have "view-main" class -->
+    <div class="view view-main view-init safe-areas" data-url="/"></div>
+
+
+  
+  </div>
+</template>

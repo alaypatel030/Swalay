@@ -1,0 +1,175 @@
+<template>
+  <div class="page dark" data-name="home">
+    <!-- Top Navbar -->
+    <div class="navbar">
+      <div class="navbar-bg"></div>
+      <div class="navbar-inner">
+        <div class="left">
+          <a href="#" class="link icon-only panel-open" data-panel="left">
+            <i class="icon f7-icons if-not-md">menu</i>
+            <i class="icon material-icons if-md">menu</i>
+          </a>
+        </div>
+        <div class="title sliding">Swalay</div>
+        <div class="title-large">
+          <div class="title-large-text">Swalay</div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="page-content">
+    
+      <div class="card demo-card-header-pic">
+        <div style="background-image:url(static/engagement.jpg)"
+          class="card-header align-items-flex-end">Engagement</div>
+        <div class="card-content card-content-padding">
+          <p class="date">May 16, 2022</p>
+         <!-- <p>Click to view photo Gallery</p> -->
+        </div>
+        <div class="list links-list no-ios-edges">
+          <ul style="background-color:gray">
+            <li><a href="/engagement/">Engagement Gallery</a></li>
+          </ul>
+        </div>
+      </div>
+
+
+      <div class="card demo-card-header-pic">
+        <div style="background-image:url(static/Haldi/haldi.jpg)"
+          class="card-header align-items-flex-end">Haldi</div>
+        <div class="card-content card-content-padding">
+          <p class="date">January 15, 2023</p>
+         <!-- <p>Click to view photo Gallery</p> -->
+        </div>
+        <div class="list links-list no-ios-edges">
+          <ul style="color:black">
+            <li style="background-color:#EEDC82;"><a href="/haldiAlayRegular/">Alay | Haldi Regular Gallery</a></li>
+            <li style="background-color:#FFEA00;"><a href="/haldiAlayCandid/">Alay | Haldi Candid Gallery</a></li>
+            <li style="background-color:#DAA520;"><a href="/haldiSweta/">Sweta | Haldi Gallery</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="card demo-card-header-pic">
+        <div style="background-image:url(static/Santak.jpg)"
+          class="card-header align-items-flex-end">Santak</div>
+        <div class="card-content card-content-padding">
+          <p class="date">January 16, 2023 ( Morning ) </p>
+         <!-- <p>Click to view photo Gallery</p> -->
+        </div>
+        <div class="list links-list no-ios-edges">
+          <ul style="color:black">
+            <li style="background-color:#FAA0A0"><a href="/santakAlayRegular/">Alay | Santak Regular Gallery</a></li>
+            <li style="background-color:#F88379"><a href="/santakAlayCandid/">Alay | Santak Candid Gallery</a></li>
+            <li style="background-color:#EE4B2B"><a href="/santakSweta/">Sweta | Santak Gallery</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="card demo-card-header-pic">
+        <div style="background-image:url(static/Sangeet.jpg)"
+          class="card-header align-items-flex-end">Sangeet</div>
+        <div class="card-content card-content-padding">
+          <p class="date">January 16, 2023 ( Evening )</p>
+         <!-- <p>Click to view photo Gallery</p> -->
+        </div>
+        <div class="list links-list no-ios-edges">
+          <ul style="color:black">
+            <li style="background-color:#CBC3E3"><a href="/sangeetAlayRegular/">Alay | Sangeet Regular</a></li>
+            <li style="background-color:#C3B1E1"><a href="/sangeetAlayCandid/">Alay | Sangeet Candid</a></li>
+            <li style="background-color:#CF9FFF"><a href="/sangeetSweta/">Sweta | Sangeet</a></li>
+          </ul>
+        </div>    
+      </div>
+
+
+      <div class="card demo-card-header-pic">
+        <div style="background-image:url(static/wedding.JPG)"
+          class="card-header align-items-flex-end">Wedding</div>
+        <div class="card-content card-content-padding">
+          <p class="date">January 17, 2023</p>
+         <!-- <p>Click to view photo Gallery</p> -->
+        </div>
+        <div class="list links-list no-ios-edges">
+          <ul style="color:black">
+            <li style="background-color:#FA5F55"><a href="/weddingAlayRegular/">Alay | Wedding Regular Gallery</a></li>
+            <li style="background-color:#FF4433"><a href="/weddingAlayCandid/">Alay | Wedding Candid Gallery</a></li>
+            <li style="background-color:#FF0000"><a href="/weddingSweta/">Sweta | Wedding Gallery</a></li>
+          </ul>
+        </div>
+      </div>
+
+
+      <div class="card demo-card-header-pic">
+        <div style="background-image:url(static/WeddingCover.jpg)"
+          class="card-header align-items-flex-end">Video Library</div>
+        <div class="list links-list no-ios-edges">
+          <ul style="color:black">
+            <li style="background-color:gray"><a href="/videoLibraryEngagement/">Engagement Video Library Gallery</a></li>
+            <li style="background-color:#FFC300"><a href="/videoLibraryWedding/">Alay | Wedding Video Library Gallery</a></li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</template>
+<style>
+  .demo-card-header-pic .card-header {
+    height: 40vw;
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+  }
+
+  .demo-card-header-pic .card-content-padding .date {
+    color: #8e8e93;
+  }
+
+  .demo-facebook-card{
+    
+  }
+
+  .demo-facebook-card .card-header {
+    display: block;
+    padding: 10px;
+  }
+
+  .demo-facebook-card .demo-facebook-avatar {
+    float: left;
+  }
+
+  .demo-facebook-card .demo-facebook-name {
+    margin-left: 44px;
+    font-size: 14px;
+    font-weight: 500;
+  }
+
+  .demo-facebook-card .demo-facebook-date {
+    margin-left: 44px;
+    font-size: 13px;
+    color: #8e8e93;
+  }
+
+  .demo-facebook-card .card-footer {
+    background: #fafafa;
+  }
+
+  .demo-facebook-card .card-footer a {
+    color: #81848b;
+    font-weight: 500;
+  }
+
+  .demo-facebook-card .card-content img {
+    display: block;
+  }
+
+  .demo-facebook-card .card-content-padding {
+    padding: 15px 10px;
+  }
+
+  .demo-facebook-card .card-content-padding .likes {
+    color: #8e8e93;
+  }
+</style>

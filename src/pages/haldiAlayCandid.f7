@@ -1,0 +1,374 @@
+<template>
+  <div class="page dark color-theme-yellow" data-name="home">
+    <!-- Top Navbar -->
+    <div class="navbar navbar-large">
+      <div class="navbar-bg"></div>
+      <div class="navbar-inner">
+        <div class="left">
+          <a href="#" class="link icon-only panel-open" data-panel="left">
+            <i class="icon f7-icons if-not-md">menu</i>
+            <i class="icon material-icons if-md">menu</i>
+          </a>
+        </div>
+        <div class="title sliding">Alay | Haldi Candid</div>
+        <div class="title-large">
+          <div class="title-large-text">Alay | Haldi Candid</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="toolbar tabbar-labels toolbar-bottom">
+      <div class="toolbar-inner">
+        <a href="#tab-1" class="tab-link tab-link-active">
+          <i class="f7-icons">rectangle_3_offgrid</i>
+          <span class="tabbar-label">Gallery</span>
+        </a>
+        <a href="#tab-2" class="tab-link">
+          <i class="f7-icons">photo_on_rectangle</i>
+          <span class="tabbar-label">Card View</span>
+        </a>
+      </div>
+    </div>
+
+   <div class="tabs">
+      <div
+        class="page-content infinite-scroll-content tab tab-active"
+        id="tab-1"
+        @infinite="${loadGallery}"
+      >
+
+        <div class="card demo-card-header-pic">
+          <div style="background-image:url(static/Haldi/haldi.jpg)"
+            class="card-header align-items-flex-end">Haldi</div>
+          <div class="card-content card-content-padding">
+            <p class="date">January 15, 2023</p>
+          </div>
+        </div>
+
+        <div class="block">
+          ${galleryItems.map((item, index) => $h`
+          <div class="row no-gap">
+            <div class="col">
+              <!-- <p>${galleryImageName(galleryItems,index,1)}</p> -->
+              <a
+                href="/dynamic-route/imageName/${galleryImageName(galleryItems,index,1)}/image/${galleryImage(galleryItems,index,1)}/"
+              >
+                <img
+                  class="elevation-demo elevation-24"
+                  src="${galleryImageThumbnail(galleryItems,index,1)}"
+                  width="100%"
+              /></a>
+            </div>
+            <div class="col">
+              <!-- <p>${galleryImageName(galleryItems,index,2)}</p> -->
+              <a
+                href="/dynamic-route/imageName/${galleryImageName(galleryItems,index,2)}/image/${galleryImage(galleryItems,index,2)}/"
+              >
+                <img
+                  class="elevation-demo elevation-24"
+                  src="${galleryImageThumbnail(galleryItems,index,2)}"
+                  width="100%"
+              /></a>
+            </div>
+            <div class="col">
+              <!-- <p>${galleryImageName(galleryItems,index,3)}</p> -->
+              <a
+                href="/dynamic-route/imageName/${galleryImageName(galleryItems,index,3)}/image/${galleryImage(galleryItems,index,3)}/"
+              >
+                <img
+                  class="elevation-demo elevation-24"
+                  src="${galleryImageThumbnail(galleryItems,index,3)}"
+                  width="100%"
+              /></a>
+            </div>
+          </div>
+          `)}
+        </div>
+        ${hasMoreItems && $h`
+        <div class="preloader infinite-scroll-preloader"></div>
+        `}
+      </div>
+      <div
+        class="page-content infinite-scroll-content tab"
+        id="tab-2"
+        @infinite="${loadMore}"
+      >
+        <div class="block">
+          <div class="row">
+            <div class="col">
+              ${items.map((item, index) => $h`
+              <div class="card demo-facebook-card" key="{index}">
+                <div class="card-content card-content-padding">
+                  <p>
+                    [${imageCounter(item)}] ${getImageName(item)}
+                  </p>
+                </div>
+                <img
+                  class="elevation-demo elevation-24"
+                  src="https://drive.google.com/uc?id=${getImageLink(item)}"
+                  width="100%"
+                />
+                <div class="card-footer">
+                 
+                  <button class="col button button-fill color-white">
+                    <a
+                      class="link external"
+                      href="https://drive.google.com/uc?export=download&id=${getImageLink(item)}"
+                      >Download</a
+                    >
+                  </button>
+                </div>
+              </div>
+              `)}
+            </div>
+          </div>
+        </div>
+        ${hasMoreItems && $h`
+        <div class="preloader infinite-scroll-preloader"></div>
+        `}
+      </div>
+    </div>
+  </div>
+</template>
+<script>
+  const gallyImages = [];
+  const images = [];
+  const galleryItems = [];
+
+  fetch(
+    "https://opensheet.elk.sh/1IDJ928Jw4P4UVK-XkieA1Fw8a12vBYgjz2rkD9sQXMQ/Haldi"
+  )
+    .then((res) => res.json())
+    .then((data) => {
+      data.forEach((row) => {
+        var imageName = row.Title;
+        if (imageName.includes("IMG")) {
+          //do nothing
+        } else {
+          images.push(row);
+        }
+      });
+    });
+
+  let imgCount = 2;
+
+  let galleryImageCount = 9;
+  export default (props, { $, $f7, $on, $update }) => {
+    let allowInfinite = true;
+    let hasMoreItems = true;
+    let loadMorelastItem = 2;
+
+    const items = [
+      "1/..##0B7A8207.JPG##1Q_2fcLOUz23es2KT-Djsynym9Nx25AEG",
+      "2/..##0B7A8208.JPG##1u3N4UEuca6eaT__S5HyLlks_McS51rku",
+    ];
+
+    const tmpGalleryItems_0 = [
+      '{"Title":"0B7A8207.JPG","Id_Thumbnails":"1e0myqOazjNs4iCuc25BDr06d9cOkxvOB","Id_Images":"1Q_2fcLOUz23es2KT-Djsynym9Nx25AEG"}',
+      '{"Title":"0B7A8208.JPG","Id_Thumbnails":"1Mj1tvLRigjiMJbQwTZNMGFC-2IVefVUC","Id_Images":"1u3N4UEuca6eaT__S5HyLlks_McS51rku"}',
+      '{"Title":"0B7A8209.JPG","Id_Thumbnails":"1x9BI6xklh3mxEe7bDES-zVNhSlTrdVDu","Id_Images":"110jVybuDIbmlVmkJLLRmF87W2aTf7yrv"}',
+    ];
+
+    const tmpGalleryItems_1 = [
+      '{"Title":"0B7A8210.JPG","Id_Thumbnails":"1uCLy72Q53p8fsQpTfa162ZNMesHxKyXc","Id_Images":"1LyYC8pCe7PER8bm49ev3G5flc0etxhD6"}',
+      '{"Title":"0B7A8211.JPG","Id_Thumbnails":"1v_YNNneMLc6JzIhpr3_hMVuVOaNG_j_M","Id_Images":"1Xvssn2QGfekD8FeNhKOwFaWL_jW9QEqP"}',
+      '{"Title":"0B7A8212.JPG","Id_Thumbnails":"1jtw_zRkzgOCQI6I93Ant01DO6Jca4gax","Id_Images":"1n1IMUozq2UGlVa7I_UJgm88V0rnVgOaY"}',
+    ];
+
+    const tmpGalleryItems_2 = [
+      '{"Title":"0B7A8213.JPG","Id_Thumbnails":"1Eisr6Cj-x6MQOFzLBQEGT5H7Xs9mvDvX","Id_Images":"1fcIGZDEa95mac2KnN2Ast87ubD4aGMBK"}',
+      '{"Title":"0B7A8214.JPG","Id_Thumbnails":"1kAF4DYjhyt--1ILUObtKAeLQghPu2GAt","Id_Images":"1RYQt61ykEEKXjvuYX2TLepSF7qwR6l7C"}',
+      '{"Title":"0B7A8216.JPG","Id_Thumbnails":"1TNjKcksYvzi7miSaGKvwhoQirMa84I-x","Id_Images":"1hU573MvpjSxwWhUmH2cOfi4bYfYiXZqZ"}',
+    ];
+
+    galleryItems.push(tmpGalleryItems_0);
+    galleryItems.push(tmpGalleryItems_1);
+    galleryItems.push(tmpGalleryItems_2);
+
+    const loadMore = () => {
+      if (!allowInfinite) return;
+      allowInfinite = false;
+
+      setTimeout(function () {
+
+        if (loadMorelastItem >= images.length) {
+          hasMoreItems = false;
+          $update();
+          return;
+        }
+
+        for (var i = 1; i <= 2; i++) {
+          try {
+            items.push(
+              imgCount +
+                "/" +
+                (images.length - 1) +
+                "##" +
+                images[imgCount].Title +
+                "##" +
+                images[imgCount].Id_Images
+            );
+            imgCount++;
+            loadMorelastItem++;
+          } catch (error) {}
+        }
+
+        allowInfinite = true;
+        $update();
+      }, 1000);
+    };
+
+    const loadGallery = () => {
+      if (!allowInfinite) return;
+      allowInfinite = false;
+
+      setTimeout(function () {
+        if (!hasMoreItems) {
+          $update();
+          return;
+        }
+
+        var tmpArr = [];
+        for (var i = 1; i <= 3; i++) {
+          var tmpStr = [];
+          for (var j = 1; j <= 3; j++) {
+            try {
+              var imageName = images[galleryImageCount].Title;
+              tmpStr.push(JSON.stringify(images[galleryImageCount]));
+              galleryImageCount++;
+            } catch (error) {
+              hasMoreItems = false;
+            }
+          }
+          galleryItems.push(tmpStr);
+        }
+
+        allowInfinite = true;
+        $update();
+      }, 500);
+    };
+
+    return $render;
+  };
+
+  export function galleryImageName(str, index, imageLocator) {
+    try {
+      var tmpArr = str[index][imageLocator - 1];
+      var tmpImage = JSON.parse(tmpArr);
+      return tmpImage.Title;
+    } catch (error) {}
+  }
+
+  export function galleryImageThumbnail(str, index, imageLocator) {
+    if(galleryImageName(str, index, imageLocator)){
+       return "static/Haldi/" + galleryImageName(str, index, imageLocator)
+    }else{
+      return ""
+    }    
+  }
+
+  export function galleryImage(str, index, imageLocator) {
+    try {
+      var tmpArr = str[index][imageLocator - 1];
+      var tmpImage = JSON.parse(tmpArr);
+      return tmpImage.Id_Images;
+    } catch (error) {
+      // Do Nothing
+    }
+  }
+
+
+  export function imageCounter(str) {
+    return str.split("##")[0];
+  }
+
+  export function getImageName(str) {
+    return str.split("##")[1];
+  }
+
+  export function getThumbnailLink(str) {
+      if(getImageName(str)){
+         return "static/Haldi/" + getImageName(str)
+        } else{
+          return ""
+        }
+  }
+
+  export function getImageLink(str) {
+    return str.split("##")[2];
+  }
+</script>
+<style>
+  img.demo-lazy {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  div.demo-lazy {
+    background: #aaa;
+    background-size: cover;
+    height: 60vw;
+  }
+
+  .demo-card-header-pic .card-header {
+    height: 40vw;
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+  }
+
+  .demo-card-header-pic .card-content-padding .date {
+    color: #8e8e93;
+  }
+
+  .demo-facebook-card {
+    
+    background: #ffcc00;
+    color: black;
+  }
+
+  .demo-facebook-card .card-header {
+    display: block;
+    padding: 10px;
+  }
+
+  .demo-facebook-card .demo-facebook-avatar {
+    float: left;
+  }
+
+  .demo-facebook-card .demo-facebook-name {
+    margin-left: 44px;
+    font-size: 14px;
+    font-weight: 500;
+  }
+
+  .demo-facebook-card .demo-facebook-date {
+    margin-left: 44px;
+    font-size: 13px;
+    color: #8e8e93;
+  }
+
+  .demo-facebook-card .card-footer {
+    background: #fafafa;
+  }
+
+  .demo-facebook-card .card-footer a {
+    color: blue;
+    font-size: large;
+    font-style: bold;
+    font-weight: 500;
+  }
+
+  .demo-facebook-card .card-content img {
+    display: block;
+  }
+
+  .demo-facebook-card .card-content-padding {
+    padding: 15px 10px;
+  }
+
+  .demo-facebook-card .card-content-padding .likes {
+    color: #8e8e93;
+  }
+</style>

@@ -1,0 +1,60 @@
+<template>
+  <div class="page dark">
+    <div class="navbar">
+      <div class="navbar-bg"></div>
+      <div class="navbar-inner sliding">
+        <div class="left">
+          <a href="#" class="link back">
+            <i class="icon icon-back"></i>
+            <span class="if-not-md">Back</span>
+          </a>
+        </div>
+        <div class="title">${getImageName()}</div>
+      </div>
+    </div>
+    <div class="page-content">
+      <div class="card demo-facebook-card" key="{index}">
+        <div class="card-content card-content-padding">
+          <p></p>
+        </div>
+        <img
+          class="elevation-demo elevation-24 lazy"
+          data-src="https://drive.google.com/uc?id=${getImageId()}"
+          width="100%"
+        />
+        <div class="card-footer">
+          <button class="col button button-fill color-white">
+            <a
+              class="link external"
+              href="https://drive.google.com/uc?export=download&id=${getImageId()}"
+              >Download Image</a
+            >
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</template>
+<style>
+  p {
+    margin: 10px 0;
+  }
+</style>
+<script>
+     // Component Method
+
+  export default function (props, { $f7route, $f7, $on, $onBeforeMount, $onMounted, $onBeforeUnmount, $onUnmounted }) {
+
+   function getImageName() {
+    return JSON.stringify($f7route.params.imgName).slice(1,-1)
+
+    }
+ 
+    function getImageId(){
+      return JSON.stringify($f7route.params.img).slice(1,-1)
+    }
+    
+    // Return render function
+    return $render;
+  }
+</script>
